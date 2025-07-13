@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINDY MITDI</title>
+    <title>CINDY MITDI - Dealer Resmi Mitsubishi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -39,10 +39,27 @@
                     <a href="#about" class="nav-link text-gray-700 font-medium">Tentang</a>
                     <a href="#contact" class="nav-link text-gray-700 font-medium">Kontak</a>
                 </nav>
-                <button class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg font-semibold">
+                <div class="lg:hidden">
+                    <button id="mobile-menu-toggle" class="text-red-600 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="hidden lg:block bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg font-semibold">
                     Hubungi Kami
                 </button>
             </div>
+            <nav id="mobile-menu" class="lg:hidden hidden flex-col space-y-4 mt-4">
+                <a href="#home" class="nav-link text-gray-700 font-medium">Beranda</a>
+                <a href="#products" class="nav-link text-gray-700 font-medium">Produk</a>
+                <a href="#services" class="nav-link text-gray-700 font-medium">Layanan</a>
+                <a href="#testimonials" class="nav-link text-gray-700 font-medium">Testimoni</a>
+                <a href="#about" class="nav-link text-gray-700 font-medium">Tentang</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium">Kontak</a>
+            </nav>
         </div>
     </header>
       <section id="home" class="hero-bg text-white py-24">
